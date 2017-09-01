@@ -1,3 +1,5 @@
+//javascript:(function(){var url='//rawgithub.com/UnnamedMinecrafter/YT-Thumb2Iframe/master/javascript.js';document.head.appendChild(document.createElement('script')).src=url;})();
+
 var thumbnails = document.getElementsByTagName("ytd-thumbnail");
 for(var i=0; i<thumbnails.length; i++) {
   var thumb = thumbnails[i];
