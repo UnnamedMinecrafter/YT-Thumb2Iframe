@@ -3,7 +3,7 @@
 function main() {
   setTimeout(main,500);
   var thumbnails = document.getElementsByTagName("ytd-thumbnail");
-  for(var i=0; i<thumbnails.length&&i<3; i++) {
+  for(var i=0; i<thumbnails.length; i++) {
     var thumb = thumbnails[i];
     var thumbLink = thumb.getElementsByTagName("a")[0];
     if(thumbLink!=undefined) {
