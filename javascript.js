@@ -21,10 +21,8 @@ function main() {
       iframe.height = height;
       iframe.src = "https://www.youtube.com/embed/"+code;
 
-      thumb.innerHTML = "";
-      thumb.appendChild(iframe);
+      thumb.innerHTML = '<iframe src="https://www.youtube.com/embed/'+code+'" width="'+width+'" height="'+height+'" allowfullscreen></iframe>';
     }
   }
 }
 main();
-
