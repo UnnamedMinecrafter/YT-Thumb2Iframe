@@ -1,6 +1,16 @@
 var thumbnails = document.getElementsByTagName("ytd-thumbnail");
 for(var i=0; i<thumbnails.length; i++) {
-  var thumbLink = thumbnails[i];
+  var thumb = thumbnails[i];
+  var thumbLink = thumb.getElementsByTagName("a")[0];
   var href = thumbLink.href;
-  thumbLink.innerHTML = href;
+  
+  var code = href.slice(32,href.length);
+  
+  var iframe = document.createElement("iframe");
+  iframe.width = 210;
+  iframe.height = 118;
+  iframe.src = "https://www.youtube.com/embed/"+code;
+  
+  thumb.innerHTML = "";
+  thumb.appendChild(iframe);
 }
